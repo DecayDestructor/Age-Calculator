@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 94%);
+}
+.container {
+  position: relative;
+  background-color: white;
+  border-radius: 15px;
+  padding: 5%;
+  border-bottom-right-radius: 80px;
+  padding-left: 4%;
+  padding-right: 0;
+}
+
+#day-bar,
+#month-bar,
+#year-bar {
+  padding: 5%;
+  width: 60%;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-size: 1rem;
+  /* border: 1px solid hsl(0, 100%, 67%); */ /*only if an invalid input is given*/
+  border-radius: 5px;
+  border: 1px solid;
+}
+.header {
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 0.2rem;
+  font-size: 0.75rem;
+  display: grid;
+  grid-template-columns: 150px 150px 150px 100px;
+  grid-template-rows: auto;
+}
+.text-bars {
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: 150px 150px 150px 100px;
+  grid-template-rows: auto;
+}
+.unactive {
+  display: none;
+}
+.error {
+  margin: 1% 0 1% 0;
+  font-family: "Poppins", sans-serif;
+  color: hsl(0, 100%, 67%);
+
+  font-size: 0.65rem;
+  display: grid;
+  grid-template-columns: 150px 150px 150px 100px;
+  grid-template-rows: auto;
+  grid-template-areas: "day month year";
+}
+#empty-day,
+#invalid-day {
+  font-style: italic;
+  grid-area: day;
+}
+#empty-month,
+#invalid-month {
+  font-style: italic;
+  grid-area: month;
+}
+#empty-year,
+#invalid-year {
+  font-style: italic;
+  grid-area: year;
+}
+hr {
+  color: hsl(0, 0%, 86%);
+  height: 1.5px;
+  background-color: hsl(0, 0%, 86%);
+  border: none;
+  margin: 7% 0 7% 0;
+}
+.get-answer {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  margin: 0;
+  padding: 0;
+}
+svg {
+  height: 25px;
+  width: 25px;
+  padding: 18%;
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 100%;
+}
+svg:hover {
+  cursor: pointer;
+}
+.output {
+  margin: 5% 0 3% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 64px;
+}
+.answer {
+  color: hsl(259, 100%, 65%);
+}
